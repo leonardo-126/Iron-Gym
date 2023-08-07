@@ -1,0 +1,32 @@
+@use '../../mixins'
+@use '../../variables'
+
+.WhyChoseUs-container 
+    width: 100%
+    max-width: 100vw
+    @include  mixins.flex-colum-center
+
+    .WhyChoseUs-title
+        font-family: variables.$font-Bebas
+        font-size: 40px
+        margin-top: 70px 
+
+        h1
+            color: variables.$primary-color
+        span
+            color: variables.$secondary-color
+    .WhyChoseUs-content
+        width: 600px
+        font-size: 18px
+        color: variables.$text-color
+        text-align: center
+        letter-spacing: 1px
+        margin-top: 20px
+        font-family: variables.$font-Poppins
+
+    .WhyChoseUs-cards
+        margin-top: 40px
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: center

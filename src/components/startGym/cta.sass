@@ -1,0 +1,76 @@
+@use '../../mixins'
+@use '../../variables'
+
+.cta-container
+    width: 1240px
+    max-width: 100vw
+    height: 100vh
+    margin: 0 auto
+    margin-top: 50px 
+    margin-bottom: 40px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    background-image: url(CtaBg.png)
+    @include mixins.bg-img
+    
+    .cta-content
+        margin-right: 30px
+        .cta-content-title
+            letter-spacing: 3px
+            width: 500px
+            h1
+                color: variables.$primary-color
+                font-size: 90px
+                font-family: variables.$font-Bebas
+            span
+                color: variables.$secondary-color
+            
+        .cta-content-text
+            width: 600px
+            p
+                font-family: variables.$font-Poppins
+                font-size: 16px
+                color: variables.$text-color
+
+        .cta-content-inputs
+            margin-top: 50px
+            width: 500px
+            .cta-content-inputs-style
+                background: none
+                border: 1px solid variables.$primary-color
+                padding: 16px 24px
+                border-radius: 3px
+                font-size: 16px
+                font-family: variables.$font-Poppins
+                color: variables.$primary-color
+            input::placeholder
+                color: variables.$primary-color
+                font-family: variables.$font-Poppins
+
+            #cta-content-inputs-name
+                width: 230px
+                margin-right: 10px
+            #cta-content-inputs-tel
+                width: 230px
+                margin-left: 10px
+
+            #cta-content-inputs-email
+                width: 480px
+                margin-top: 24px
+        .cta-content-button
+            
+            button
+                background: none
+                border: 1px solid variables.$secondary-color
+                border-radius: 2px
+                color: variables.$secondary-color
+                font-size: 21px
+                font-family: variables.$font-Bebas
+                padding: 24px 40px 
+                margin-top: 24px
+                cursor: pointer
+                transition: 0.7s
+                &:hover
+                    background: variables.$bg-color
+

@@ -1,0 +1,82 @@
+@use '../../mixins'
+@use '../../variables'
+
+
+.Testimonials-container
+    background-image: url('./bgTestimonials.png')
+    background-size: cover
+    background-position: center
+    height: 730px
+    width: 100%
+    
+    .Testimonials-content-title
+        font-family: variables.$font-Bebas
+        width: 750px
+        margin: 0 auto
+        padding-top: 70px
+        
+        h1
+            color: variables.$primary-color
+            font-size: 90px 
+        span 
+            color: variables.$secondary-color
+            font-size: 90px 
+    
+    .Testimonials-content-description
+        font-family: variables.$font-Poppins
+        color: variables.$text-color
+        width: 920px
+        margin: 0 auto
+        text-align: center
+        margin-top: 80px
+        p
+            font-size: 16px
+
+    .Testimonials-content-arrow
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 0px 5%
+        margin-top: 30px
+
+        .Testimonials-content-clients
+            width: 200px
+            display: flex
+            flex-direction: column
+            align-items: center
+
+
+            .Testimonials-content-clients-name
+                color: variables.$primary-color
+                font-family: variables.$font-Bebas
+                font-size: 38px
+                margin-top: 30px
+
+            .Testimonials-content-clients-img
+                margin-top: 15px
+                img
+                    border: 2px solid variables.$secondary-color
+
+
+
+    .Testimonials-content-mudar
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        margin-top: 50px
+
+        #active-testimonials
+            background: variables.$secondary-color
+
+
+        .Testimonials-content-mudar-bg
+            cursor: pointer
+            transition: 0.4s
+            width: 10px
+            height: 10px
+            background: #484848
+            margin-right: 10px
+
+            &:hover
+                background: variables.$secondary-color

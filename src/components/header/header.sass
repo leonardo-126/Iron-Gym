@@ -1,0 +1,54 @@
+@use '../../mixins'
+@use '../../variables'
+.header-container
+    width: 100%
+    height: 100vh
+
+    .bannerHero
+        background: url(./Image.png)
+        @include mixins.bg-img
+        width: 100%
+        height: 100vh
+
+    .header-content
+        width: 100%
+        height: 80px
+        position: absolute
+        top: 0
+        font-family: variables.$font-Bebas
+
+        @include mixins.flex-center
+        padding: 0 5%
+        border-bottom: 1px solid #e2e2e2a8
+
+        &-navbar
+            ul
+                height: 100%
+                @include mixins.flex-center
+            
+                li
+                    margin: 0 1.2rem
+                    font-size: 20px
+
+                    .active
+                        color: variables.$secondary-color
+                
+                    a
+                        &:hover
+                            color: variables.$secondary-color
+        .button-header
+            font-size: 20px
+            padding: 15px
+            background-color: variables.$secondary-color
+            border: none
+            border-radius: 2px
+            color: variables.$primary-color
+            transition: 0.7s
+            cursor: pointer
+            font-family: variables.$font-Bebas
+            opacity: 0.7
+
+
+            &:hover
+                scale: 1.05 
+                opacity: 1
