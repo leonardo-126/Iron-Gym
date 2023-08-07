@@ -6,7 +6,8 @@ import { Experience } from './components/experience/experience'
 import { CTA } from './components/startGym/cta'
 import { Footer } from './components/footer/footer'
 import { Trainers } from './components/trainers/trainer'
-import { Testimonials } from './components/Testimonials/Testimonials'
+import { Testimonials } from './components/Testimonials/testimonials'
+
 
 
 function App() {
